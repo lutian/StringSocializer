@@ -3,7 +3,7 @@
 /**
  * Parse string and add mentions and hashtags from many social networks
  * 
- * @version 1.0
+ * @version 1.1
  * @link https://github.com/lutian/stringSocializer
  * @author Lutian (Luciano Salvino)
  * @license http://opensource.org/licenses/gpl-license.php GNU Public License
@@ -14,7 +14,7 @@ class stringSocializer {
     /**
      * @var string version
      */
-	private $version = '1.0';
+	private $version = '1.1';
     
     /**
      * @var boolean html
@@ -25,12 +25,12 @@ class stringSocializer {
      * @var array socialNetworks
      */
     private $socialNetworks = [
-                               'facebook'   => ['name' => 'facebook', 'url' => 'https://www.facebook.com/', 'hashtagLink' => 'https://www.facebook.com/hashtag/', 'mentionLink' => 'https://www.facebook.com/'],
-                               'twitter'    => ['name' => 'twitter', 'url' => 'https://www.twitter.com/', 'hashtagLink' => 'https://twitter.com/search?q=', 'mentionLink' => 'https://twitter.com/'],
-                               'instagram'  => ['name' => 'instagram', 'url' => 'https://www.instagram.com/', 'hashtagLink' => 'https://www.instagram.com/explore/tags/', 'mentionLink' => 'https://www.instagram.com/'],
-                               'googleplus' => ['name' => 'googleplus', 'url' => 'https://plus.google.com/', 'hashtagLink' => 'https://plus.google.com/explore/', 'mentionLink' => 'https://plus.google.com/'],
-                               'tumblr'     => ['name' => 'tumblr', 'url' => 'https://www.tumblr.com/', 'hashtagLink' => 'https://www.tumblr.com/tagged/', 'mentionLink' => 'https://www.tumblr.com/search/'],
-                               'pinterest'  => ['name' => 'pinterest', 'url' => 'https://pinterest.com', 'hashtagLink' => 'https://pinterest.com/search/?rs=hashtag&q=%23', 'mentionLink' => 'https://pinterest.com/']
+                               'facebook'   => array('name' => 'facebook', 'url' => 'https://www.facebook.com/', 'hashtagLink' => 'https://www.facebook.com/hashtag/', 'mentionLink' => 'https://www.facebook.com/'),
+                               'twitter'    => array('name' => 'twitter', 'url' => 'https://www.twitter.com/', 'hashtagLink' => 'https://twitter.com/search?q=', 'mentionLink' => 'https://twitter.com/'),
+                               'instagram'  => array('name' => 'instagram', 'url' => 'https://www.instagram.com/', 'hashtagLink' => 'https://www.instagram.com/explore/tags/', 'mentionLink' => 'https://www.instagram.com/'),
+                               'googleplus' => array('name' => 'googleplus', 'url' => 'https://plus.google.com/', 'hashtagLink' => 'https://plus.google.com/explore/', 'mentionLink' => 'https://plus.google.com/'),
+                               'tumblr'     => array('name' => 'tumblr', 'url' => 'https://www.tumblr.com/', 'hashtagLink' => 'https://www.tumblr.com/tagged/', 'mentionLink' => 'https://www.tumblr.com/search/'),
+                               'pinterest'  => array('name' => 'pinterest', 'url' => 'https://pinterest.com', 'hashtagLink' => 'https://pinterest.com/search/?rs=hashtag&q=%23', 'mentionLink' => 'https://pinterest.com/')
                                ];
     
     /**

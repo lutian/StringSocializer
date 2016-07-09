@@ -12,78 +12,78 @@ $originalString = 'El partido estaba igualado sin tantos hasta que el genio de L
 $stringSocializer->setOriginalString($originalString);
 
 // Hashtags and Mentions for many social networks
-$hashtags = [
-             'facebook' => [
-                    [
+$hashtags = array(
+             'facebook' => array(
+                    array(
                         'title' => 'LeoMessi',
                         'mention' => 'LeoMessi',
-                        'names'   => ['/Lionel Messi/i'] 
-                    ],
-                    [
+                        'names'   => array('/Lionel Messi/i') 
+                    ),
+                    array(
                         'title' => 'NeymarJr',
                         'mention' => 'Neymarjr',
-                        'names'   => ['/Neymar/i'] 
-                    ],
-                    [
+                        'names'   => array('/Neymar/i') 
+                    ),
+                    array(
                         'title' => 'LuisSuarez',
                         'mention' => 'Luis-Suarez-167866666571743',
-                        'names'   => ['/Luis Suarez/i'] 
-                    ]
-                ],
-             'twitter' => [
-                    [
+                        'names'   => array('/Luis Suarez/i') 
+                    )
+                ),
+             'twitter' => array(
+                    array(
                         'title' => 'Messi',
                         'hashtag' => 'Messi',
-                        'names'  => ['/Lionel Messi/i'] 
-                    ],
-                    [
+                        'names'  => array('/Lionel Messi/i') 
+                    ),
+                    array(
                         'title' => 'NeymarJr',
                         'mention' => 'neymarjr',
-                        'names'   => ['/Neymar/i'] 
-                    ],
-                    [
+                        'names'   => array('/Neymar/i') 
+                    ),
+                    array(
                         'title' => 'LuisSuarez9',
                         'mention' => 'LuisSuarez9',
-                        'names'   => ['/Luis Suarez/i'] 
-                    ]
-                ],
-             'instagram' => [
-                    [
+                        'names'   => array('/Luis Suarez/i') 
+                    )
+                ),
+             'instagram' => array(
+                    array(
                         'title' => 'LeoMessi',
                         'mention' => 'leomessi',
-                        'names'  => ['/Lionel Messi/i'] 
-                    ],
-                    [
+                        'names'  => array('/Lionel Messi/i') 
+                    ),
+                    array(
                         'title' => 'NeymarJr',
                         'mention' => 'neymarjr',
-                        'names'   => ['/Neymar/i'] 
-                    ],
-                    [
+                        'names'   => array('/Neymar/i') 
+                    ),
+                    array(
                         'title' => 'LuisSuarez9',
                         'mention' => 'LuisSuarez9',
-                        'names'   => ['/Luis Suarez/i'] 
-                    ]
-                ],
-             'googleplus' => [
-                    [
+                        'names'   => array('/Luis Suarez/i') 
+                    )
+                ),
+             'googleplus' => array(
+                    array(
                         'title' => 'LeoMessi',
                         'hashtag' => 'LeoMessi',
-                        'names'   => ['/Lionel Messi/i'] 
-                    ],
-                    [
+                        'names'   => array('/Lionel Messi/i') 
+                    ),
+                    array(
                         'title' => 'NeymarJr',
                         'mention' => '110543884226915019329',
-                        'names'  => ['/Neymar/i'] 
-                    ],
-                    [
+                        'names'  => array('/Neymar/i') 
+                    ),
+                    array(
                         'title' => 'LuisSuarez',
                         'mention' => '117508493298516511885',
-                        'names'   => ['/Luis Suarez/i'] 
-                    ]             
-                ],
-             'tumblr'   => [],
-             'pinterest'   => [],
-             ];
+                        'names'   => array('/Luis Suarez/i') 
+                    )             
+                ),
+             'tumblr'   => array(),
+             'pinterest'   => array(),
+             );
 $stringSocializer->setHashtags($hashtags);
 
 // You can set the in html or text plain (optional)
